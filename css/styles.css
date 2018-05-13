@@ -1,0 +1,278 @@
+* {
+  margin: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+#container{
+  display: flex;
+  flex-flow: column nowrap;
+
+}
+
+/* Header */
+   .header{
+     max-width: 100%;
+     display: flex;
+     flex-flow: column nowrap;
+    }
+       .menu{
+         display: flex;
+         flex-flow: row nowrap;
+         height: 250px;
+         align-items: center;
+
+       }
+          .logo{
+            width: 200px;
+            flex: 1 1 auto;
+            padding: 1em;
+          }
+            .udacity{
+              max-width: 100%;
+              display: flex;
+              flex-flow: column nowrap;
+            }
+
+          .title{
+
+            flex: 3 1 auto;
+
+
+          }
+            h1{
+              font-family: 'Lato', sans-serif;
+              font-size: 60px;
+              font-weight: normal;
+              color: #2d3c49;
+              text-transform: uppercase;
+              text-align: right;
+            }
+            h4{
+              font-family: 'Lato', sans-serif;
+              font-size: 20px;
+              font-weight: normal;
+              color: #2d3c49;
+              text-transform: uppercase;
+              text-align: right;
+            }
+
+     hr {
+       border-top: 4px solid #7d97ad;
+       border-bottom: none;
+       border-left:none;
+       border-right:none;
+       height: 6px;
+       width: 100%;
+        }
+
+/* Content */
+    .section{
+
+      max-width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      height: auto;
+
+    }
+       .mylogo{
+
+         padding: 1em;
+         max-width: 100%;
+         max-height: 100%;
+         display: flex;
+         flex-flow: column nowrap;
+         width: 1200px;
+         margin-left: auto;
+         margin-right: auto;
+
+       }
+          .jo{
+            max-width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+          }
+
+       .future{
+
+         display: flex;
+         flex-flow: column nowrap;
+
+       }
+         h2{
+           font-family: 'Lato', sans-serif;
+           font-weight: normal;
+           text-transform: capitalize;
+           font-size: 40px;
+           text-align: left;
+           color: #7d97ad;
+           display: flex;
+           flex-flow: column nowrap;
+         }
+
+         .projects{
+
+           display: flex;
+           flex-flow: row nowrap;
+
+         }
+           .appify,
+           .sunflower,
+           .bokeh{
+
+             flex: 1 1 auto;
+             align-items: center;
+             padding: 1em;
+             max-width: 100%;
+             display: flex;
+             flex-flow: column nowrap;
+             margin-left: auto;
+             margin-right: auto;
+           }
+
+              .ap,
+              .sun,
+              .ke{
+
+                max-width: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                margin-left: auto;
+                margin-right: auto;
+
+              }
+
+             h3{
+               font-family:'Lato', sans-serif;
+               font-weight: normal;
+               font-size: 50px;
+               font-weight: bold;
+               color: #2d3c49;
+               text-transform: uppercase;
+               text-align: center;
+             }
+             p{
+               font-family:'Lato', sans-serif;
+               font-weight: normal;
+               font-size: 20px;
+               font-weight: normal;
+               color: #2d3c49;
+               text-transform: uppercase;
+               text-align: center;
+             }
+/* Footer */
+
+    .footer{
+
+      display: flex;
+      justify-content: center;
+
+    }
+       nav{
+         width: 300px;
+         align-items: center;
+
+       }
+         .link{
+           font-family:'Lato', sans-serif;
+           font-weight: normal;
+           font-size: 20px;
+           color: #2d3c49;
+           text-align: center;
+           display: flex;
+           flex-flow: column nowrap;
+         }
+
+/*Responsibe*/
+@media all and (max-width: 900px){
+  .section{
+    flex-direction: column;
+
+  }
+  .menu{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projects{
+    flex-direction: column;
+
+  }
+  .appify,
+  .sunflower,
+  .bokeh{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  hr {
+    border-top: 3px solid #7d97ad;
+}
+h1{
+  font-size: 60px;
+  text-align: center;
+}
+h4{
+  font-size: 30px;
+  text-align: center;
+}
+h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+}
+
+
+@media all and (max-width: 400px){
+  .section{
+    flex-direction: column;
+  }
+  .menu{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .udacity{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1,
+  h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  h3{
+    font-size: 25px;
+    text-align: center;
+  }
+  h4,
+  p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .projects{
+    flex-direction: column;
+
+  }
+
+  .appify,
+  .sunflower,
+  .bokeh{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  hr {
+    border-top: 2px solid #7d97ad;
+}
+}
